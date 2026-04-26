@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnAddNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_number"
+        android:onClick="addNumber"/>
+
+    <Button
+        android:id="@+id/btnSubtractNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/subtract_number"
+        android:onClick="subtractNumber"/>
+
+    <Button
+        android:id="@+id/btnResetNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/reset_number"
+        android:onClick="resetNumber"/>
+
+    <Button
+        android:id="@+id/btnDisplayMessage"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Display Message"/>
+
+    <Button
+        android:id="@+id/btnToSecondActivity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Second Activity"/>
+
+    <EditText
+        android:id="@+id/inputWeight"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Weight (lbs)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/inputHeight"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Height (inches)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnSendBMI"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txtBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Result"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
