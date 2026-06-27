@@ -50,8 +50,15 @@ class MainActivity : AppCompatActivity() {
         // BMI
         binding.btnSendBMI.setOnClickListener {
 
+            val nama = binding.editTextName.text.toString() // <-- Tambahkan ini
+
             val weight = binding.inputWeight.text.toString().toDoubleOrNull()
             val height = binding.inputHeight.text.toString().toDoubleOrNull()
+
+            if (nama.isEmpty()) {
+                Toast.makeText(this, "Masukkan nama dulu!", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
 
             if (weight == null || height == null) {
                 Toast.makeText(this, "Isi weight dan height dengan benar!", Toast.LENGTH_SHORT).show()
@@ -59,6 +66,8 @@ class MainActivity : AppCompatActivity() {
             }
 
             val intent = Intent(this, SecondActivity::class.java)
+
+            intent.putExtra("NAMA", nama)
 
             val bundle = Bundle()
             bundle.putDouble("weight", weight)

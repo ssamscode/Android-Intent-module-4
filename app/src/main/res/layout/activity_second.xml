@@ -4,21 +4,37 @@
     android:gravity="center"
     android:orientation="vertical">
 
+  <!-- Judul -->
+
+  <!-- Nama -->
+
+  <!-- Data BMI -->
+
+  <!-- Button Hitung -->
+
+  <TextView
+      android:id="@+id/tvTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Halaman Activity Second"
+      android:textSize="30sp"
+      android:textStyle="bold" />
+
   <TextView
       android:id="@+id/tvNama"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
       android:text="Nama"
-      android:textSize="24sp"
-      android:layout_marginTop="10dp"/>
+      android:textSize="24sp" />
 
   <TextView
       android:id="@+id/txtIntentData"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
       android:text="Data BMI"
-      android:textSize="18sp"
-      android:layout_marginTop="10dp"/>
+      android:textSize="18sp" />
 
   <Button
       android:id="@+id/btnCalculate"
@@ -27,6 +43,7 @@
       android:text="Calculate BMI"
       android:layout_marginTop="10dp"/>
 
+  <!-- Button Kembali -->
   <Button
       android:id="@+id/btnExitActivity"
       android:layout_width="wrap_content"

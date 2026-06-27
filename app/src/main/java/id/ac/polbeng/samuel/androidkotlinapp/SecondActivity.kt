@@ -16,24 +16,24 @@ class SecondActivity : AppCompatActivity() {
         binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // =========================
+
         // 🔹 AMBIL DATA NAMA
-        // =========================
+
         val nama = intent.getStringExtra("NAMA")
         binding.tvNama.text = "Halo, $nama"
 
-        // =========================
+
         // 🔹 AMBIL DATA BMI
-        // =========================
+
         val bundle = intent.getBundleExtra("BMI_DATA")
         val weight = bundle?.getDouble("weight")
         val height = bundle?.getDouble("height")
 
         binding.txtIntentData.text = "Weight: $weight | Height: $height"
 
-        // =========================
+
         // 🔹 HITUNG BMI & KIRIM BALIK
-        // =========================
+
         binding.btnCalculate.setOnClickListener {
 
             var bmi = 0.0
@@ -49,9 +49,9 @@ class SecondActivity : AppCompatActivity() {
             finish()
         }
 
-        // =========================
+
         // 🔹 TOMBOL KELUAR
-        // =========================
+
         binding.btnExitActivity.setOnClickListener {
             finish()
         }
