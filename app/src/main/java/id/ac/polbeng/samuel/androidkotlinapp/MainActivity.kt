@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         // BMI
         binding.btnSendBMI.setOnClickListener {
 
-            val nama = binding.editTextName.text.toString() // <-- Tambahkan ini
+            val nama = binding.editTextName.text.toString() 
 
             val weight = binding.inputWeight.text.toString().toDoubleOrNull()
             val height = binding.inputHeight.text.toString().toDoubleOrNull()
